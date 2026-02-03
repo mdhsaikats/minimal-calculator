@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="asset/calculator.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator</title>
+</head>
+<body>
+<main class="flex justify-center items-center h-screen bg-gray-100">
+  <div class="flex flex-col gap-6 border-2 border-black shadow-lg 
+              w-[400px] h-[600px] rounded-2xl p-6 bg-white">
+
+    <!-- Display -->
+    <input
+      id="display"
+      type="text"
+      placeholder="0"
+      readonly
+      class="w-full h-20 text-right text-3xl px-4
+             border border-gray-300 rounded-xl
+             focus:outline-none focus:ring-2 focus:ring-black"
+    />
+
+    <!-- Buttons -->
+    <div class="grid grid-cols-4 gap-4">
+      <button class="btn col-span-3 bg-red-500 text-white rounded-md w-full h-16 hover:bg-white hover:text-red-500 hover:border hover:border-red-500 transition duration-300">C</button>
+      <button class="btn bg-orange-500 text-white rounded-md w-full h-16 hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500 transition duration-300">÷</button>
+
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">7</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">8</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">9</button>
+      <button class="btn bg-orange-500 text-white rounded-md w-full h-16 hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500 transition duration-300">×</button>
+
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">4</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">5</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">6</button>
+      <button class="btn bg-orange-500 text-white rounded-md w-full h-16 hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500 transition duration-300">−</button>
+
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">1</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">2</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">3</button>
+      <button class="btn bg-orange-500 text-white rounded-md w-full h-16 hover:bg-white hover:text-orange-500 hover:border hover:border-orange-500 transition duration-300">+</button>
+
+      <button class="btn col-span-2 border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">0</button>
+      <button class="btn border border-black rounded-md w-full h-16 hover:bg-black hover:text-white transition duration-300">.</button>
+      <button class="btn bg-black text-white rounded-md w-full h-16 hover:bg-white hover:text-black hover:border hover:border-black transition duration-300">=</button>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center text-sm text-gray-600 mt-auto">
+      <p>&copy; 2026 Calculator App</p>
+      <p>Made with ❤️ by Saikat</p>
+    </div>
+  </div>
+</main>
+    <script src="script.js"></script>
+</body>
+</html>
